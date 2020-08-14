@@ -25,7 +25,6 @@ end
   
   def doctors
     self.appointments.map do |appointment| 
-      binding.pry
       appointment.doctor
   end
 end
