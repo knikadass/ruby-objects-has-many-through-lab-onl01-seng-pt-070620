@@ -24,8 +24,11 @@ class Patient
 end
   
   def doctors
-    self.appointments.map {|appointment| appointment.doctor}
+    self.appointments.map do |appointment| 
+      binding.pry
+      appointment.doctor
   end
+end
   
    def self.all
     @@all
